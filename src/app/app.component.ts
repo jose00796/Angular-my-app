@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   show:boolean = true;
+  calc:number = 0;
 }
