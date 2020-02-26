@@ -1,10 +1,16 @@
 <h1 class="container bg-dark text-white text-center my-4 py-4">NgIf = {{show}}</h1>
-<h1 class="container bg-dark text-white text-center my-4 py-4">NgIf = {{calc}}</h1>
+<h1 class="container bg-dark text-white text-center my-4 py-4">Calcular = {{calc}}</h1>
 
 <div class="container">
 <button class="btn btn-warning" (click)="show=!show">Accion</button>
 <button class="btn btn-warning" (click)="calc = calc + 1">+</button>
 <button class="btn btn-warning" (click)="calc = calc - 1">-</button>
+
+<p *ngIf = "calc >= 7 ">Alta Lacra</p>
+<p *ngIf = "calc >= 5">Has Aprobado</p>
+<p *ngIf = "calc < 5 ">Todo un Pedro</p>
+
+<p *ngIf = "EsMuyListo()">Super Programador</p>
 
 <p class="text-info" *ngIf = "show">El Manchester United Football Club es un club de fútbol de la ciudad de Mánchester (Inglaterra) que compite en la 
 Premier League y disputa sus partidos como local en el estadio Old Trafford.</p>
