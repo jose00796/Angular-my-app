@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title:string = 'my-app';
   show:boolean = true;
   calc:number = 0;
   activo:string;
