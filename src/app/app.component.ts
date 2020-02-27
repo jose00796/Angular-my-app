@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   show:boolean = true;
   calc:number = 0;
+  activo:string;
   materia:string = 'programacion';
 
   EsMuyListo()

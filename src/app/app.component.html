@@ -6,17 +6,19 @@
 <button class="btn btn-warning" (click)="calc = calc + 1">+</button>
 <button class="btn btn-warning" (click)="calc = calc - 1">-</button>
 
+<button class="btn btn-dark" (click)="activo ='primero'">Primero</button>
+<button class="btn btn-danger" (click)="activo = 'segundo'">Segundo</button>
+
 <p *ngIf = "calc >= 7 ">Alta Lacra</p>
 <p *ngIf = "calc >= 5">Has Aprobado</p>
 <p *ngIf = "calc < 5 ">Todo un Pedro</p>
 
 <p *ngIf = "EsMuyListo()">Super Programador</p>
 
-<p class="text-info" *ngIf = "show; else showDos">El Manchester United Football Club es un club de fútbol de la ciudad de Mánchester (Inglaterra) que compite en la 
+<p class="text-info d-none" [ngClass]="{'d-block':activo == 'primero'}">El Manchester United Football Club es un club de fútbol de la ciudad de Mánchester (Inglaterra) que compite en la 
 Premier League y disputa sus partidos como local en el estadio Old Trafford.</p>
 
-<ng-template #showDos>
-  <p class="text-danger">Fue fundado el 5 de marzo de 1878 bajo el nombre de Newton Heath LYR Football Club2​ y se incorporó a la First Division en 1892.2​5​ 
+  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Fue fundado el 5 de marzo de 1878 bajo el nombre de Newton Heath LYR Football Club2​ y se incorporó a la First Division en 1892.2​5​ 
     Después de estar cerca de la bancarrota en 1902, J. H. Davies tomó las riendas del club y cambio su nombre por el actual.6​ Durante la Segunda Guerra 
     Mundial su estadio fue bombardeado y durante un tiempo estuvieron jugando en Maine Road.7​8​ El equipo gozó de un éxito sin precedentes 
     tras nombrar a Matt Busby como entrenador del equipo y ganar la liga en 1956 y 1957.9​ Pese a que en 1958 ocurrió el desastre aéreo de Múnich, 
@@ -24,7 +26,6 @@ Premier League y disputa sus partidos como local en el estadio Old Trafford.</p>
     así como la Copa de Europa —actual Liga de Campeones— en 1968. Entre los años 1990 y 2000 Alex Ferguson dirigió al equipo a la
     obtención de ocho campeonatos ligueros y en 1999 se convirtió en el primer equipo inglés en ganar la Champions League,
     la Premier League y la FA Cup en la misma temporada —el «triplete» del club—.12​</p>
-</ng-template>
 
 </div>
 
