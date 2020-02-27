@@ -1,1 +1,30 @@
-<p>leccion-ng-for works!</p>
+<h1 class="container bg-dark text-white text-center my-4 py-4">NgFor</h1>
+
+<div class="container">
+
+    <ul>
+        <li *ngFor="let MisGustos of gustos">{{MisGustos}}</li>
+    </ul>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Sexo</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let persona of ACPirata; index as i">
+                <th scope="row">{{i}}</th>
+                <td>{{persona.nombre}}</td>
+                <td>{{persona.edad}}</td>
+                <td>{{persona.cedula}}</td>
+                <td>{{persona.sexo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
