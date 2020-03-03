@@ -1,3 +1,5 @@
+import { RouterModule, Routes } from '@angular/router';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +11,12 @@ import { FooterComponent } from './footer/footer.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NgIfNgClassNgForComponent } from './ng-if-ng-class-ng-for/ng-if-ng-class-ng-for.component';
+
+const routes: Routes = [
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'cuerpo', component: CuerpoComponent }
+];
+
 
 @NgModule({
   declarations: [
@@ -22,7 +30,8 @@ import { NgIfNgClassNgForComponent } from './ng-if-ng-class-ng-for/ng-if-ng-clas
     NgIfNgClassNgForComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
