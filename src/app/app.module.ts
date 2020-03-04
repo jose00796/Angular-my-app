@@ -14,9 +14,12 @@ import { NgIfNgClassNgForComponent } from './ng-if-ng-class-ng-for/ng-if-ng-clas
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
-  { path: 'cuerpo', component: CuerpoComponent }
+  { path: 'contenido', component: ContenidoComponent },
+  { path: 'cuerpo', component: CuerpoComponent },
+  { path: 'listas', component: LeccionNgForComponent },
+  { path: '', component: NgIfNgClassNgForComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
-
 
 @NgModule({
   declarations: [
