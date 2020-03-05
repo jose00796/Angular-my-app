@@ -16,6 +16,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 //Servicios Pinguinito...
 
 import { EquipoService } from './equipo.service';
+import { EquipoComponent } from './equipo/equipo.component';
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
     CuerpoComponent,
     ContactoComponent,
     NgIfNgClassNgForComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,

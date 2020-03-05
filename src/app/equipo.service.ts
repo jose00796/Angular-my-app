@@ -9,12 +9,12 @@ export class EquipoService {
     {
       nombre:'Jose',
       especialidad:'PHP/Angular/Super_Amante',
-      descripcion:'Futuro Director Ejecutivo de la oficina de Analisis en el CNE y futuro esposo de Migdaly'
+      descripcion:'Futuro Director Ejecutivo de la oficina de Analisis en el CNE y futuro esposo de Migdaly 😍'
     },
 
     {
       nombre:'Pedro',
-      especialidad:'Un Coño/Ilusionar con un Pizza y no PAGARLA NUNCA!!',
+      especialidad:'Un Coño/Ilusionar con Pizza y no PAGARLA NUNCA!!',
       descripcion:'Capitan Supremo Intergalactico indiscutible de nuestro equipo de futbol ',
     },
 
@@ -27,8 +27,14 @@ export class EquipoService {
     {
       nombre:'Ricardo',
       especialidad:'PHP/BDD/Servicio_Tecnico/etc',
-      descripcion:'Creador de Wasacaca que dejan perder y pesimos gustos en la eleccion de equipos de futbol',
+      descripcion:'Creador de Guasacaca y pesimos gustos en la eleccion de equipos de futbol',
     },
+
+    {
+      nombre:'Ernesto',
+      especialidad:'BDD',
+      descripcion:'Personaje interesante que aun no conozco, Le gusta lanzarle Manzanas a la Gente',
+    }
   ];
 
   constructor() {
