@@ -13,11 +13,16 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { NgIfNgClassNgForComponent } from './ng-if-ng-class-ng-for/ng-if-ng-class-ng-for.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 
+//Servicios Pinguinito...
+
+import { EquipoService } from './equipo.service';
+
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'contenido', component: ContenidoComponent },
   { path: 'cuerpo', component: CuerpoComponent },
   { path: 'listas', component: LeccionNgForComponent },
+  { path: 'nosotros', component: NosotrosComponent },
   { path: '', component: NgIfNgClassNgForComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
@@ -38,7 +43,9 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    EquipoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
