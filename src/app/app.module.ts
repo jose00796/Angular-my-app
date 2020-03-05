@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NgIfNgClassNgForComponent } from './ng-if-ng-class-ng-for/ng-if-ng-class-ng-for.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
@@ -30,7 +31,8 @@ const routes: Routes = [
     FooterComponent,
     CuerpoComponent,
     ContactoComponent,
-    NgIfNgClassNgForComponent
+    NgIfNgClassNgForComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
