@@ -12,10 +12,10 @@
 
     <li class="list-group-item active">Equipo de Trabajo</li>
     
-    <li class="list-group-item" *ngFor = 'let team of equipo'>
+    <li class="list-group-item" *ngFor = "let team of equipo, index as i">
         <h6>Nombre = {{team.nombre}}</h6>
         <h6>Especialidad = {{team.especialidad}}</h6>
-        <a href="#">Leer Mas...</a>
+        <a [routerLink]="['/equipo', i]" >Leer Mas...</a>
     </li>
   
 </ul>

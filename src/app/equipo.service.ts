@@ -41,8 +41,11 @@ export class EquipoService {
     console.log('Funcionando Servicio GUAPO!!');
    }
 
-   GetTeam()
-   {
+   GetTeam(){
      return this.equipo;
+   }
+
+   GetOne(i){
+      return this.equipo[i];
    }
 }

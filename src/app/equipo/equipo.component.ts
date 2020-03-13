@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { EquipoService } from './../equipo.service';
 
 @Component({
   selector: 'app-equipo',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipoComponent implements OnInit {
 
-  constructor() { }
+  equipo:any[] = [];
+
+  constructor(
+      private ruta:ActivatedRoute,
+      private _servicio:EquipoService
+  ) { 
+      this.ruta.params.subscribe(params =>{
+        console.log(params['id'])
+        this.equipo = _servicio.GetOne(params['id'])
+      })
+  }
 
   ngOnInit(): void {
   }
