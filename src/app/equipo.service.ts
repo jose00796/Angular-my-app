@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class EquipoService {
 
-  equipo:any[] = [
+  equipo:any = [
     {
       nombre:'Jose',
       especialidad:'PHP/Angular/Super_Amante',
@@ -35,7 +35,7 @@ export class EquipoService {
       especialidad:'BDD',
       descripcion:'Personaje interesante que aun no conozco, Le gusta lanzarle Manzanas a la Gente',
     }
-  ];
+  ]
 
   constructor() {
     console.log('Funcionando Servicio GUAPO!!');

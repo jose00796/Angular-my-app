@@ -9,15 +9,15 @@ import { EquipoService } from './../equipo.service';
 })
 export class EquipoComponent implements OnInit {
 
-  equipo:any[] = [];
+  equipo:any = [];
 
   constructor(
-      private ruta:ActivatedRoute,
-      private _servicio:EquipoService
-  ) { 
-      this.ruta.params.subscribe(params =>{
+    private ruta:ActivatedRoute, 
+    private _servicio:EquipoService) { 
+      
+    this.ruta.params.subscribe(params =>{
         console.log(params['id'])
-        this.equipo = _servicio.GetOne(params['id'])
+        this.equipo = this._servicio.GetOne(params['id'])
       })
   }
 
